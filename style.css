@@ -1,7 +1,11 @@
-body {
+* {
     margin: 0;
+    box-sizing: border-box;
+}
+
+body {
     
-    /* box-sizing: border-box; */
+    
 }
 
 .top {
@@ -28,7 +32,7 @@ header {
 
 button {
     background-color: rgb(110, 61, 246);
-    border: none;
+    border: 1px solid rgb(110, 61, 246);
     display: inline;
     color: white;
     font-weight: 200;
@@ -36,6 +40,12 @@ button {
     font-size: 1.5rem;
     padding: 5px 25px;
     border-radius: 20px;
+}
+
+button:hover {
+    background-color: white;
+    border: 1px solid rgb(110, 61, 246);
+    color: black;
 }
 
 header img {
@@ -48,20 +58,30 @@ header img {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: space-between;
     font-family: "Sofia Sans Condensed", sans-serif;
     text-transform: uppercase;
-    /* font-size: 2rem; */
+    padding: 230px 400px;
     background-image: url(images/header-image.webp);
     background-size: cover;
     background-position: center;
-    box-sizing: border-box;
-    padding: 144px;
     width: 100%;
 }
 
 .hero h1 {
     font-size: 80px;
+    
 }
+
+.hero h4 {
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+.hero button {
+    margin-top: 30px;
+}
+
 
 nav a {
     margin: 10px;
@@ -71,13 +91,12 @@ nav a {
 
 
 .styleSection1 {
-    box-sizing: border-box;
     background-color: lightgray;
     padding: 100px;
     width: 100%;
 }
 
-.gridContainer {
+.gridContainer1 {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 50px 100px 150px auto;
@@ -114,14 +133,21 @@ nav a {
 
 
 
-/* .myGrid {
+.styleSection2 {
+    background-color: white;
+    padding: 100px;
+    width: 100%;
+
+    
+}
+
+.gridContainer2 {
     display: grid;
     grid-template-columns: 200px 200px 200px;
     gap: 20px;
     
 }
-
-.gridItem {
+/* .gridItem {
     border: 5px solid black;
 
 }
